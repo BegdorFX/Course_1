@@ -1,0 +1,34 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class ClassroomSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        $classrooms=[
+                'A1',
+                'A2',
+                'A3',
+                'B1',
+                'D1',
+                'D2',
+                'D3',
+                'D4',
+                'D5',
+            ]);
+
+            foreach ($classrooms as $classroom_1){
+                classroom::create([
+                    'name'-> $classroom_1,
+                ]);
+            }
+        ]
+    }
+}
